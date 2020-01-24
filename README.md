@@ -13,9 +13,15 @@ A curated list of awesome .NET Performance books, courses, trainings, conference
 	- [High Performance Libraries](#high-performance-libraries)
 	- Article series
 		- [Benchmarking](#benchmarking)
+		- [Monitoring](#monitoring)
+		- [Investigations](#investigations)
+		- [Debugging performances series by Tess Ferrandez](#debugging-performances-series-by-tess-ferrandez)
 		- [JIT Optimizations](#jit-optimizations)
 		- [Refs](#refs)		
 		- [Threading](#threading)
+		- [Memory](#memory)
+		- [.NET Core 3.0 Intrinsics](#net-core-30-intrinsics)
+		- [Performance Improvements in .NET Core](#performance-improvements-in-net-core)
 
 ## Books
 
@@ -56,15 +62,40 @@ A curated list of awesome .NET Performance books, courses, trainings, conference
 * [Mastering .NET Threading](http://wintellect.com/software-development-training/courses/mastering-dotnet-threading) by Wintellect (USA)
 
 ## Upcoming conferences
-* 2019
-	* [Dotnetos - .NET Performance World](https://conf.dotnetos.org) - Two-day conference dedicated solely to .NET performance! Both international and Polish speakers (all sessions in English). Chance to meet well-known people from .NET performance area in person. (10-11 October 2019, Warsaw)
+* 2020
+	* [Dotnetos - .NET Performance World](https://conf.dotnetos.org) - Two-day conference dedicated solely to .NET performance! Both international and Polish speakers (all sessions in English). Chance to meet well-known people from .NET performance area in person. (01-02 October 2020, Warsaw)
 ## Conference talks
 
 Sorted from newest to oldest:
+* 2019
+    * [What the game industry taught me about performance](https://vimeo.com/372255674) by Brian Rasmussen, (10.11.2019, Øredev)
+    * [Compiling and Running a PHP on .NET Core](https://www.youtube.com/watch?v=nb6H84Y5fag) by Jakub Míšek, (11.10.2019, Dotnetos Conference)
+    * [Ethereum performance in .NET Core](https://www.youtube.com/watch?v=jtv2TzaZ594) by Tomasz Stanczak, Piotr Gankiewicz, (11.10.2019, Dotnetos Conference)
+    * [To ORM or not to ORM](https://www.youtube.com/watch?v=SUXqvh5T2T8) by Łukasz Dziekan, (11.10.2019, Dotnetos Conference)
+    * [Writing Allocation Free Code in C#](https://www.youtube.com/watch?v=bMmuSXx5vsQ) by Matt Ellis, (11.10.2019, Dotnetos Conference)
+    * [Cliff diving into async in .NET Core and C# 8](https://www.youtube.com/watch?v=fcLcWwSEJUQ) by Daniel Marbach, (11.10.2019, Dotnetos Conference)
+    * [Performance Testing](https://www.youtube.com/watch?v=5S8c3j2HFpY) by Andrey Akinshin, (10.10.2019, Dotnetos Conference)
+    * [How Entity Framework translates LINQ all the way to SQL](https://www.youtube.com/watch?v=r69ZxXgOIK4) by Shay Rojansky, (10.10.2019, Dotnetos Conference)
+    * [.NET Intrinsics in CoreCLR 3.0](https://www.youtube.com/watch?v=M6HaSvifxwQ) by Dan Schechter, (10.10.2019, Dotnetos Conference)
+    * [The .NET Garbage Collector](https://www.youtube.com/watch?v=LPcjSdob9AA) by Peter Sollich, (10.10.2019, Dotnetos Conference)
+    * [.NET Performance Investigation](https://www.youtube.com/watch?v=y4HV5m5GR7o) by Adam Sitnik, (10.10.2019, Dotnetos Conference)
+    * [Performance in the .NET Runtime](https://www.youtube.com/watch?v=9l8EOQV1Yws) by Matt Warren, (10.10.2019, Dotnetos Conference)
+    * [Spanification](https://www.youtube.com/watch?v=THXG5jv0BrU) by Adam Sitnik (09.09.2019, Update Conference Prague)
+    * [JIT and AOT in the CLR](https://www.youtube.com/watch?v=PS36qjpPRaY) by Mei-Chin Tsai (30.07.2019, JVM Language Summit)
+    * [Powerful benchmarking in .NET](https://www.youtube.com/watch?v=pdcrSG4tOLI) by Adam Sitnik (09.07.2019, Update Conference Prague)
+    * [What’s new for performance in .NET Core and ASP.NET Core 3.0](https://www.youtube.com/watch?v=bIfolJJJWqs) by Ben Adams (08.07.2019, .NET Core Summer Event)
+    * [Ref struct, ref readonly struct, ref returning, ref everything!](https://www.youtube.com/watch?v=bYBbhqvC26Y) by Konrad Kokosa (04.06.2019, DotNext)
+    * [Building responsive and scalable applications](https://www.youtube.com/watch?v=xGSabgBo-S8) by Jeffrey Richter (26.03.2019, DotNext)
+    * [Make your custom .NET GC — "whys" and "hows"](https://www.youtube.com/watch?v=om8YFyTO5ik) by Konrad Kokosa (18.03.2019, DotNext)
+    * [Extend the new WinDbg to build your own dream debugging tool](https://www.youtube.com/watch?v=tSlFd0CIo0g)  by Kevin Gosse (18.03.2019, DotNext)
+    * [Tuning a Runtime for Both Productivity and Performance](https://www.infoq.com/presentations/net-runtime-architecture/) by Mei-Chin Tsai (26.02.2019, QCon)
 * 2018
-    * [Extend the new WinDbg to build your own dream debugging tool](https://www.youtube.com/watch?v=tSlFd0CIo0g)  by Kevin Gosse (DotNext Moscow)
-    * [Building your own debugging toolbox with ClrMD](https://www.youtube.com/watch?v=NsAYan7jlGE)  by Christophe Nasarre (DotNext Moscow)
-    * [Advanced .NET debugging techniques from a real world investigation](https://www.youtube.com/watch?v=tGXegMmIZ2s)  by Christophe Nasarre & Kevin Gosse (DotNext StPetersburg)
+    * [Efficient Buffer Manipulation using C# 7.2's Span](https://www.youtube.com/watch?v=gWcyXGIbRDI) by Jeffrey Richter (28.11.2018, SPB .NET Meetup)
+    * [Building your own debugging toolbox with ClrMD](https://www.youtube.com/watch?v=NsAYan7jlGE)  by Christophe Nasarre (28.11.2018, DotNext)
+    * [Scratched metal](https://www.youtube.com/watch?v=eB_S9lQ4c4I) by Federico Lois (26.10.2018, DotNext)
+    * [PerfView: The Ultimate .NET Performance Tool](https://www.youtube.com/watch?v=qGEeZZBwVp4) by Sasha Goldshtein (27.08.2018, QCon)
+    * [Advanced .NET debugging techniques from a real world investigation](https://www.youtube.com/watch?v=tGXegMmIZ2s)  by Christophe Nasarre & Kevin Gosse (21.08.2018, DotNext)
+    * [Patterns for high-performance C#](https://www.youtube.com/watch?v=7GTpwgsmHgU) by Federico Lois (08.02.2018, DotNext)
 * 2017
 	* [What's new for performance in .NET Core 2.0](https://www.youtube.com/watch?v=eOdhWTX3Ajk) by Ben Adams (2017.11.09, CORESTART 2.0)
 	* [State of the .NET Performance](https://www.youtube.com/watch?v=CSPSvBeqJ9c) by Adam Sitnik (2017.07.05, NDC)
@@ -90,12 +121,14 @@ Sorted from newest to oldest:
 
 ## Blogs
 
+* [Maoni Stephens](https://devblogs.microsoft.com/dotnet/author/maoni/)
+* [Stephen Toub](https://devblogs.microsoft.com/dotnet/author/stephen_toubhotmail-com/)
 * [Matt Warren](http://mattwarren.org)
 * [Andrey Akinshin](http://aakinshin.net)
+* [Dan Shechter](https://bits.houmus.org/)
+* [Egor Bogatov](https://egorbo.com/)
 * [Oren Eini aka Ayende](https://ayende.com/blog)
-* [Sasha Goldshtein](http://blogs.microsoft.co.il/sasha)
 * [Alexandre Mutel aka xoofx](http://xoofx.com/blog)
-* [Jack Mott aka PerlinMandleBro](https://jackmott.github.io)
 * [Vladimir Sadov](http://mustoverride.com/)
 * [Adam Sitnik](http://adamsitnik.com)
 * [Konrad Kokosa](http://tooslowexception.com/)
@@ -105,24 +138,24 @@ Sorted from newest to oldest:
 * [Ben Adams](https://github.com/benaadams)
 * [Jan Kotas](https://github.com/jkotas)
 * [Stephen Toub](https://github.com/stephentoub)
-* [omariom](https://github.com/omariom)
-* [James Ko](https://github.com/jamesqo)
 * [mikedn](https://github.com/mikedn)
-* [Justin Van Patten](https://github.com/justinvp)
-* [nietras](https://github.com/nietras)
+* [Tanner Gooding](https://github.com/tannergooding)
 * [Vladimir Sadov](https://github.com/VSadov)
+* [Dan Shechter](https://github.com/damageboy)
+* [Egor Bogatov](https://github.com/EgorBo)
 * [Federico Andres Lois](https://github.com/redknightlois)
 * [Konrad Kokosa](https://github.com/kkokosa)
+* [nietras](https://github.com/nietras)
 
 ## Performance tools
 ### Benchmarking
 * [BenchmarkDotNet](https://github.com/PerfDotNet/BenchmarkDotNet) - Powerful .NET library for benchmarking.
 * [NBench](https://github.com/petabridge/NBench) - Cross-platform performance benchmarking and testing framework for .NET applications.
-* [xunit.performance](https://github.com/Microsoft/xunit-performance) - Provides extensions over xUnit to author performance tests.
 ### Profiling
 * [Prefix](http://stackify.com/prefix) - Free lightweight profiler for ASP.NET apps shows everything your code is doing across 30+ common libraries
 * [MiniProfiler](https://miniprofiler.com/dotnet/) - Free profiling tool for .NET applications with Entity Framework and ASP.Net integration (Core supported for both versions)
 * [dotTrace](https://www.jetbrains.com/profiler/) - Paid profiler for .NET applications from the JetBrains team, included in the Resharper Ultimate package
+* [Unchase.FluentPerformanceMeter](https://github.com/unchase/Unchase.FluentPerformanceMeter) - Free open-source and cross-platform .Net Standard 2.0 library that is designed for the method’s performance measurement
 ### Application Insights
 * [App Metrics](https://github.com/alhardy/AppMetrics) - App Metrics is an open-source and cross-platform .NET library used to record and report metrics within an application and reports it's health. See the docs for [more](https://alhardy.github.io/app-metrics-docs/getting-started/intro.html) details. 
 
@@ -151,6 +184,7 @@ Sorted from newest to oldest:
 ## Article series
 
 ### Benchmarking
+* [Microbenchmark Design Guidelines](https://github.com/dotnet/performance/blob/master/docs/microbenchmark-design-guidelines.md) by Adam Sitnik
 * [The Art of Benchmarking](http://mattwarren.org/2014/09/19/the-art-of-benchmarking/) by Matt Warren
 * [Adventures in Benchmarking - Memory Allocations](http://mattwarren.org/2016/02/17/adventures-in-benchmarking-memory-allocations/) by Matt Warren
 * [Micro-Benchmarking Done Wrong, And For The Wrong Reasons](http://blogs.microsoft.co.il/sasha/2012/06/22/micro-benchmarking-done-wrong-and-for-the-wrong-reasons/) by Sasha Goldshtein
@@ -181,7 +215,7 @@ Sorted from newest to oldest:
 * [.NET Threadpool starvation, and how queuing makes it worse](http://labs.criteo.com/2018/10/net-threadpool-starvation-and-how-queuing-makes-it-worse/) by Criteo Labs
 * [Get-process-name challenge on a Friday afternoon](https://medium.com/criteo-labs/get-process-name-challenge-on-a-friday-afternoon-304a93bccdd1) by Christophe Nasarre
 
-###### Debugging performances series by Tess Ferrandez
+### Debugging performances series by Tess Ferrandez
 * [All .NET Debugging Demos: Hang, Crash, memory, and CPU ](https://blogs.msdn.microsoft.com/tess/2008/04/03/net-debugging-demos-lab-7-memory-leak-review/)
 * [Reader email: Need help troubleshooting perf/memory issues](https://blogs.msdn.microsoft.com/tess/2010/12/06/reader-email-need-help-troubleshooting-perfmemory-issues/)
 * [Debugging a classic ReaderWriterLock deadlock with SOSex.dll](https://blogs.msdn.microsoft.com/tess/2010/04/27/debugging-a-classic-readerwriterlock-deadlock-with-sosex-dll/)
@@ -226,18 +260,37 @@ Sorted from newest to oldest:
 * [ref returns and locals](https://adamsitnik.com/ref-returns-and-ref-locals/) by Adam Sitnik
 
 ### Threading
+* [An Introduction to System.Threading.Channels](https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels/)  by Stephen Toub
+* [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq/) by Stephen Toub
 * [Threading in C#](http://www.albahari.com/threading/) by Joseph Albahari
 
 ### Memory
+* [GC Perf Infrastructure – Part 1](https://devblogs.microsoft.com/dotnet/gc-perf-infrastructure-part-1/) by Maoni Stephens
+* [GC Perf Infrastructure – Part 0](https://devblogs.microsoft.com/dotnet/gc-perf-infrastructure-part-0/) by Maoni Stephens
+* [The history of the GC configs](https://devblogs.microsoft.com/dotnet/the-history-of-the-gc-configs/) by Maoni Stephens
+* [Finalization implementation details](https://devblogs.microsoft.com/dotnet/finalization-implementation-details/]) by Maoni Stephens
+* [A portable way to get GC events in process and no admin privilege with 10 lines of code (and ability to dynamically enable/disable events)](https://devblogs.microsoft.com/dotnet/a-portable-way-to-get-gc-events-in-process-and-no-admin-privilege-with-10-lines-of-code-and-ability-to-dynamically-enable-disable-events/) by Maoni Stephens
+* [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) by Maoni Stephens
+* [Running with Server GC in a Small Container Scenario Part 1 – Hard Limit for the GC Heap](https://devblogs.microsoft.com/dotnet/running-with-server-gc-in-a-small-container-scenario-part-1-hard-limit-for-the-gc-heap/) by Maoni Stephens
+* [Running with Server GC in a Small Container Scenario Part 0](https://devblogs.microsoft.com/dotnet/running-with-server-gc-in-a-small-container-scenario-part-0/) by Maoni Stephens
+* [You Should Never See This Callstack in Production](https://devblogs.microsoft.com/dotnet/you-should-never-see-this-callstack-in-production/) by Maoni Stephens
+* [Middle Ground between Server and Workstation GC](https://devblogs.microsoft.com/dotnet/middle-ground-between-server-and-workstation-gc/) by Maoni Stephens
 * [Pooling large arrays with ArrayPool](https://adamsitnik.com/Array-Pool/) by Adam Sitnik
 * [Value Types vs Reference Types](https://adamsitnik.com/Value-Types-vs-Reference-Types/) by Adam Sitnik
 * [Span](https://adamsitnik.com/Span/) by Adam Sitnik
 
 ### .NET Core 3.0 Intrinsics
+* [Hardware Intrinsics in .NET Core](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/) by Tanner Gooding
 * [Exploring .NET Core platform intrinsics: Part 1 - Accelerating SHA-256 on ARMv8](https://mijailovic.net/2018/06/06/sha256-armv8/) by Nemanja Mijailovic
 * [Exploring .NET Core platform intrinsics: Part 2 - Accelerating AES encryption on ARMv8](https://mijailovic.net/2018/06/18/aes-armv8/) by Nemanja Mijailovic
 * [Exploring .NET Core platform intrinsics: Part 3 - Viewing the code generated by the JIT](https://mijailovic.net/2018/07/05/generated-code/) by Nemanja Mijailovic
 * [Exploring .NET Core platform intrinsics: Part 4 - Alignment and pipelining](https://mijailovic.net/2018/07/20/alignment-and-pipelining/) by Nemanja Mijailovic
-* [.NET Core 3.0 Intrinsics in Real Life - 1/3](https://bits.houmus.org/2018-08-18/netcoreapp3.0-instrinsics-in-real-life-pt1) by damageboy
-* [.NET Core 3.0 Intrinsics in Real Life - 2/3](https://bits.houmus.org/2018-08-19/netcoreapp3.0-instrinsics-in-real-life-pt2) by damageboy
+* [.NET Core 3.0 Intrinsics in Real Life - 1/3](https://bits.houmus.org/2018-08-18/netcoreapp3.0-intrinsics-in-real-life-pt1) by damageboy
+* [.NET Core 3.0 Intrinsics in Real Life - 2/3](https://bits.houmus.org/2018-08-19/netcoreapp3.0-intrinsics-in-real-life-pt2) by damageboy
 * [.NET Core 3.0 Intrinsics in Real Life - 3/3](https://bits.houmus.org/2018-08-20/netcoreapp3.0-intrinsics-in-real-life-pt3) by damageboy
+
+### Performance Improvements in .NET Core
+* [Performance Improvements in .NET Core 3.0](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/) by Stephen Toub
+* [Performance Improvements in .NET Core 2.1](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-2-1/) by Stephen Toub
+* [Performance Improvements in .NET Core](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core/) by Stephen Toub
+
